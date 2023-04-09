@@ -1,3 +1,7 @@
+.prettierignore
+.eslintignore
+.stylelintcache;
+
 # ===================================================================================
 # expo default gitignore
 
