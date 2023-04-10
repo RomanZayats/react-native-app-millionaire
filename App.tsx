@@ -1,11 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {StatusBar} from 'expo-status-bar';
+import {StyleSheet, Text, View} from 'react-native';
+import styled from 'styled-components/native';
+
+const StyledText = styled.Text`
+  color: magenta;
+  font-size: 50px;
+`;
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hello, Olyt!</Text>
-      <StatusBar style="auto" />
+      <StyledText>Hey, Zayats.ua!</StyledText>
+      <StatusBar style='auto' />
     </View>
   );
 }
