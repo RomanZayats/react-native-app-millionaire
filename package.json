@@ -1,5 +1,5 @@
 {
-  "name": "mil",
+  "name": "react-native-app-millionaire",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
@@ -8,7 +8,6 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "husky-prepare": "husky install",
     "ts-check": "yarn tsc",
     "eslint-check": "eslint ./",
     "eslint:fix": "eslint ./ --fix",

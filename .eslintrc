@@ -4,22 +4,12 @@
 
 {
   "parser": "@babel/eslint-parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
+  "plugins": ["react", "react-native"],
+  "extends": ["eslint:recommended", "prettier"],
   "env": {
-    "browser": true,
     "jest": true
   },
-  "plugins": ["react", "react-native"],
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
-    "eslint:recommended",
-    "prettier"
-  ],
+  "parserOptions": {},
   "rules": {
     "react/no-direct-mutation-state": 2,
     "react/no-did-mount-set-state": 2,
@@ -31,12 +21,7 @@
     "no-undef": 2,
     "semi": 2
   },
-  "globals": {
-    "describe": false,
-    "GLOBAL": false,
-    "expect": false,
-    "it": false
-  },
+  "globals": {},
   "settings": {
     "react": {
       "version": "detect"
