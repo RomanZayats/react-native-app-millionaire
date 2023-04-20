@@ -11,13 +11,9 @@
   },
   "parserOptions": {},
   "rules": {
-    "react/no-direct-mutation-state": 2,
-    "react/no-did-mount-set-state": 2,
     "react/jsx-no-duplicate-props": 2,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
-    "react/jsx-no-bind": 2,
-    "react/prop-types": 2,
     "no-undef": 2,
     "semi": 2
   },
