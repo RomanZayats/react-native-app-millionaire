@@ -1,27 +1,20 @@
-import {StatusBar} from 'expo-status-bar';
-import {StyleSheet, Text, View} from 'react-native';
-import styled from 'styled-components/native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Home from 'screens/Home';
+import OtherScreen from 'screens/OtherScreen';
+import { TRootStackParamList } from './types';
 
-export default function App() {
+const { Navigator, Screen } = createNativeStackNavigator<TRootStackParamList>();
+const App: React.FC = () => {
   return (
-    <View style={styles.container}>
-      <Text>Hello, Olyt!</Text>
-      <StyledText>Hey, Zayats.ua!</StyledText>
-      <StatusBar style='auto' />
-    </View>
+    <NavigationContainer>
+      <Navigator initialRouteName="Home">
+        <Screen name="Home" component={Home} />
+        <Screen name="NotHome" component={OtherScreen} />
+      </Navigator>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-const StyledText = styled.Text`
-  color: magenta;
-  font-size: 50px;
-`;
+export default App;
