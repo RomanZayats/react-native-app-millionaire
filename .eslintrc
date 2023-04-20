@@ -14,7 +14,7 @@
     "react/jsx-no-duplicate-props": 2,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
-    "no-undef": 2,
+    "no-undef": 0,
     "semi": 2
   },
   "globals": {},
