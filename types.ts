@@ -1,8 +1,4 @@
 export type TRootStackParamList = {
-  Home: undefined;
+  Start: undefined;
   NotHome: undefined;
-};
-
-export type a = {
-  ololo: boolean;
 };
