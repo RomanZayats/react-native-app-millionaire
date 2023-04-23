@@ -8,10 +8,10 @@ export const StartView = styled.View`
   background-color: ${({ theme }) => theme.primaryBackground};
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 48px 20px;
+  flex: 1;
   align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
 `;
 
 export const TriangleBackground = styled.View`
@@ -39,6 +39,8 @@ export const Head = styled.Text`
 `;
 
 export const StartButton = styled.Pressable`
+  position: absolute;
+  bottom: 120px;
   background: ${({ theme }) => theme.primary};
   border-radius: 8px;
   padding: 16px 0;
