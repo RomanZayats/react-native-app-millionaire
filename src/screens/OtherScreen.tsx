@@ -6,7 +6,6 @@ import { Button } from 'react-native';
 
 const ScreenView = styled.View`
   flex: 1;
-  background-color: burlywood;
   align-items: center;
   justify-content: center;
 `;

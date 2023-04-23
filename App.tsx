@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Start from 'screens/Start';
+import Start from 'screens/Start/Start';
 import OtherScreen from 'screens/OtherScreen';
 import { TRootStackParamList } from './types';
 import { ThemeProvider } from 'styled-components/native';
@@ -12,7 +12,10 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
       <NavigationContainer>
-        <Navigator initialRouteName="Start">
+        <Navigator
+          initialRouteName="Start"
+          screenOptions={{ headerShown: false }}
+        >
           <Screen name="Start" component={Start} />
           <Screen name="NotHome" component={OtherScreen} />
         </Navigator>
